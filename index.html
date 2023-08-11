@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Divyansh Gupta 
+    </title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree&family=Handjet&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Akshar:wght@700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="impo1">
+        <img src="images/main1.png" data-speed="-10" alt="background graphic" class="responsive layer" width="600" height="700">
+        <h1 class="air1 layer " data-speed="5">DIVYANSH GUPTA </h1>
+        <ul class="air4">
+            <li class="air2 layer"  data-speed="1"><a href="#aboutme" class="air3">About me</a></li>
+            <li class="air2 layer" data-speed="1"><a href="" class="air3">Projects</a></li>
+            <li class="air2 layer "  data-speed="1"><a href="" class="air3">Resume</a></li>
+            <li class="air2 layer"  data-speed="1"><a href="" class="air3">Contact</a></li>
+            <li class="air2 layer"  data-speed="1"><a href="" class="air3">Linkedin</a></li>
+            <li class="air2 layer"  data-speed="1"><a href="" class="air3">Github</a></li>
+            
+        </ul>
+    </section>
+    <section class="impo2" id="aboutme">
+        <div class="container air5">
+            <div class="row">
+                <div class="col-sm-6 mb-6 " data-aos="fade-right">
+                    <img src="images\profile.jpeg" alt="profilephoto" class="responsive2">
+                </div>
+                <div class="col-sm-6 mb-6" data-aos="fade-left">
+                    <p class="head1">Welcome to my portfolio 🙎<br>I am a web developer , designer<br>I have worked on different projects related to front end web applications<br>Some knowledge of backend development too<br>If you want to work with me <br><a href="">Contact me</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+
+function parallax(e) {
+    document.querySelectorAll('.layer').forEach(layer => {
+        const speed = layer.getAttribute('data-speed');
+        const x = (window.innerWidth - e.pageX) * speed / 100;
+        const y = (window.innerHeight - e.pageY) * speed / 100;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+}
+  AOS.init();
+
+        </script>
+</body>
