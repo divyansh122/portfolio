@@ -42,9 +42,7 @@ body {
   perspective: 10px;
   height: 50vw;
   position: absolute;
-  background-size: cover;
   margin-left: 25%;
-  margin-right: 30%;
 }
 
 .air1 {
@@ -126,7 +124,6 @@ a.air3:hover:before {
     margin-top: 30px;
     height: 100%;
     margin-left: 21%;
-    margin-right: 30%;
   }
   .impo1 {
     height: 30vh;
@@ -151,7 +148,6 @@ a.air3:hover:before {
     margin-top: 30px;
     height: 35vh;
     margin-left: 21%;
-    margin-right: 30%;
     filter: blur(0px);
   }
 }
@@ -326,11 +322,23 @@ p.head2{
   font-family: "Akshar", sans-serif;
   font-size: 12vw;
 }
+.icons{
+  margin-bottom:  10px;
+}
 @media screen and (max-width: 800px) {
   .impo4{
-    height: 130vh;
+    height: 140vh;
   }
   .air13{
     top: 17%;
+  }
+  .icons{
+    margin-bottom:  10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 370px) {
+  .impo4{
+    height: 163vh;
   }
 }
