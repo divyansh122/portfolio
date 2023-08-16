@@ -4,12 +4,14 @@
         Divyansh Gupta 
     </title>
     <meta charset="UTF-8">
-
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,11 +29,12 @@
 
 <body>
     <section class="impo1">
-        <img src="images/main1.png" data-speed="3" alt="background graphic" class="responsive layer" width="600" height="700">
+        <img src="images\experimental-two-gradient-lenses-glass-sphere-removebg-preview.png" data-speed="3" alt="background graphic" class="responsive layer" width="600" height="700">
         <h1 class="air1" data-aos="zoom-out" duration="2000">DIVYANSH GUPTA </h1>
         <ul class="air4">
             <li class="air2"  ><a href="#aboutme" class="air3">About me</a></li>
             <li class="air2 " ><a href="#projects" class="air3">Projects</a></li>
+            <li class="air2 " ><a href="#participation" class="air3">Participations</a></li>
             <li class="air2 " ><a href="Divyansh_Gupta.pdf" class="air3" download>Resume</a></li>
             <li class="air2 "  ><a href="" class="air3">Contact</a></li>
             
@@ -50,7 +53,7 @@
         </div>
     </section>
     <section class="impo3" id="projects">
-        <img src="images\PROJECTBACKMAIN-removebg-preview.png" data-speed="-3" alt="background graphic" class="responsive layer" width="600" height="700">
+        <img src="images\projecback.png" data-speed="-3" alt="background graphic" class="responsive layer" >
         <h1 class="air9"  data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
@@ -83,7 +86,7 @@
             <div class="row hello">
                
                 <div class="col-sm-6  mb-6">
-                    <video class="air11" autoplay="autoplay" data-aos="flip-down" loop muted>
+                    <video class="air11" autoplay="autoplay" data-aos="flip-down" loop muted >
                         <source src="videos/hackathoN VIDEO.mp4" type="video/mp4" />
                         </video>               
               </div>
@@ -105,13 +108,42 @@
             </div>
         </div>
     </section>
-    <section class="impo5" id="projects">
-        <img src="images\DESIGNBACKGROUNDREMOVEMAIN.png" data-speed="-3" alt="background graphic" class="responsive layer" width="600" height="700">
-        <h1 class="air13"  data-aos="fade-zoom-in"
+    <section class="impo5" id="participation">
+        <img src="images\participation back.png" data-speed="-3" alt="background graphic" class="responsive1 layer">
+        <h1 class="air13 "    data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
-        data-aos-offset="0">DESIGNS</h1>
+              data-aos-offset="0">PARTICIPATIONS</h1>
 
+    </section>
+    <section CLASS="impo6">
+        <div class="wrapper">
+            <div class="slider-wrap">
+              <div id="slider" class="slider">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+              </div>
+            </div>
+            <div class="btn-wrap">
+              <i id="prev" class="material-icons btn">&#xE5CB;</i>
+              <i id="next" class="material-icons btn">&#xE5CC;</i>
+            </div>
+          </div>
+    </section>
+    <section class="impo7" >
+      <hr width="100%" color="white" size="50px" />
+      <div class="container">
+        <div class="footer">
+          <h1 id="h1footer">Follow</h1>
+          <h1 id="h1footer">Follow</h1>
+          <h1 id="h1footer">Follow</h1>
+          <h1 id="h1footer">Follow</h1>
+
+        </div>
+      </div>     
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script>
@@ -127,6 +159,43 @@
         }
 
         AOS.init();
+        var prev = document.getElementById('prev');
+var next = document.getElementById('next');
+var slider = document.getElementById('slider');
+var total = 0, step = 100;
+
+prev.addEventListener('click', slide);
+next.addEventListener('click', slide);
+
+function slide()
+{
+  if(this.getAttribute('id') == 'prev')
+  {
+    if(total == 0)
+    {
+      total = -400;
+      slider.style.left = total + '%';
+    }
+    else
+    {
+      total += step;
+      slider.style.left = total + '%';
+    }
+  }
+  else
+  {
+    if(total == -400)
+    {
+      total = 0;
+      slider.style.left = total;
+    }
+    else
+    {
+      total -= step;
+      slider.style.left = total + '%';
+    }
+  }
+}
 
         </script>
 </body>

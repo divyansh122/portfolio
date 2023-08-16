@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: font;
   src: url(FontsFree-Net-Eirian.woff);
@@ -36,20 +38,21 @@ body {
 
 .responsive {
   width: 50%;
-  height: 100%;
+  height: 90%;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
-  height: 50vw;
   position: absolute;
-  margin-left: 25%;
+  align-items: center;
+    opacity: 0.7;
+    margin-left: 25%;
 }
 
 .air1 {
   position: relative;
   text-align: center;
   top: 30%;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0), 5px 5px 70px rgb(90, 79, 79);
+  text-shadow: 5px 5px 12px rgb(0, 0, 0), 5px 5px 70px rgb(90, 79, 79);
   color: aliceblue;
   font-family: "Akshar", sans-serif;
   font-size: 12vw;
@@ -116,15 +119,13 @@ a.air3:hover:before {
     padding: 2px;
     align-items: center;
   }
+  .responsive {
+    margin-top: 30px;
+    height: 30Vh;
+  }
   
 }
 @media screen and (max-width: 400px) {
-  .responsive {
-    width: 100%;
-    margin-top: 30px;
-    height: 100%;
-    margin-left: 21%;
-  }
   .impo1 {
     height: 30vh;
     background-color: black;
@@ -139,16 +140,19 @@ a.air3:hover:before {
     align-items: center;
   }
 }
+@media screen and (max-width: 1000px) {
+  .impo1 {
+    height: 30vh;
+  }
+}
 @media screen and (max-width: 600px) {
   .air1 {
     top: 25%;
   }
   .responsive {
-    width: 30vh;
     margin-top: 30px;
-    height: 35vh;
-    margin-left: 21%;
-    filter: blur(0px);
+    height: 100%;
+    margin-left: 25%;
   }
 }
 img.responsive2 {
@@ -203,7 +207,7 @@ a.air7{
 
 .impo3{
   height: 100vh;
-  top: 50px;
+  top: 70px;
   background-color: black;
   box-sizing: border-box;
   position: relative;
@@ -212,18 +216,18 @@ a.air7{
 .air9{
   position: relative;
   text-align: center;
-  top: 50%;
+  top: 40%;
   text-shadow: 2px 2px 5px rgb(0, 0, 0), 5px 5px 70px rgb(90, 79, 79);
   color: aliceblue;
   font-family: "Akshar", sans-serif;
   font-size: 12vw;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .air9{
     top: 20%;
   }
   .impo3{
-    height: 40vh;
+    height:30vh;
   }
   .air9{
     top: 55%;
@@ -235,6 +239,16 @@ a.air7{
   background-color: black;
   box-sizing: border-box;
   position: relative;
+}
+@media screen and (max-width:400px) {
+  .impo4{
+    height:180vh;
+  }
+}
+@media screen and (max-width:980px) {
+  .impo4{
+    height: 10vh;
+  }
 }
 video.air11{
   height: auto;
@@ -316,7 +330,7 @@ p.head2{
 .air13{
   position: relative;
   text-align: center;
-  top: 50%;
+  top: 40%;
   text-shadow: 2px 2px 5px rgb(0, 0, 0), 5px 5px 70px rgb(90, 79, 79);
   color: aliceblue;
   font-family: "Akshar", sans-serif;
@@ -325,9 +339,13 @@ p.head2{
 .icons{
   margin-bottom:  10px;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width:1300px) {
   .impo4{
     height: 140vh;
+  }
+  .impo5{
+    height: 46vh;
   }
   .air13{
     top: 17%;
@@ -342,3 +360,149 @@ p.head2{
     height: 163vh;
   }
 }
+.responsive1{
+  width: 50%;
+  height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  position: absolute;
+  align-items: center;
+    opacity: 0.7;
+    margin-left: 25%;
+}
+@media screen and (max-width: 600px) {
+  .responsive1 {
+    margin-top: 30px;
+    height: 40%;
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .responsive1 {
+    margin-top: 30px;
+    height: 40%;
+    margin-left: 25%;
+  }
+}
+.impo6{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 980px) {
+  .impo6{
+    height: 40vh;
+  }
+}
+.wrapper
+{
+  position: relative;
+  max-width: 960px;
+  width: 90%;
+  height: 56.25vw;
+  max-height: 540px;
+  box-shadow: 0 0 15px rgba(0,0,0,.35);
+}
+
+.slider-wrap
+{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider
+{                                                       
+  position: relative;
+  left: 0;
+  height: 100%;
+  width: 500%;
+  transition: 300ms ease-in-out;
+}
+
+.slide
+{
+  float: left;
+  height: 100%;
+  width: 20%;
+  background-size: cover;
+}
+
+/* Slide 1 */
+.slide:nth-child(1) {
+  background-image: url("/images/techadroithackathon.jpg");
+}
+
+/* Slide 2 */
+.slide:nth-child(2) {
+  background-image: url("/images/webcomeptition.png");
+}
+
+/* Slide 3 */
+.slide:nth-child(3) {
+  background-image: url(https://unsplash.it/962/540);
+}
+
+/* Slide 4 */
+.slide:nth-child(4) {
+  background-image: url(https://unsplash.it/963/540);
+}
+
+/* Slide 5 */
+.slide:nth-child(5) {
+  background-image: url(https://unsplash.it/964/540);
+}
+
+.btn
+{
+  position: absolute;
+  top: 250px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFF;
+  background: #2C2C2C;
+  cursor: pointer;
+  user-select: none;
+  transition: background 150ms ease-in-out;
+}
+
+.btn:first-child { left: -.5em;  }
+.btn:last-child  { right: -.5em; }
+
+.btn:hover  { background: #131313; }
+.btn:active
+{
+  transform: scale(.97);
+  background: #000;
+}
+
+@media(max-width: 950px)
+{
+  .slide {background-position: center;}
+  
+  .btn { top: -.5em; }
+  .btn:first-child { left: calc(50% - 1em); }
+  .btn:last-child { left: calc(50% + 1em); }
+}
+.impo7{
+  height: 50vh;
+}
+
+#h1footer{
+  margin-top: 5px;
+  color: #DA9F93;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 3em;
+}
+
+@media screen and (max-width: 1000px) {
+  .impo7{
+    height: 10vh;
+  }
+}
+
