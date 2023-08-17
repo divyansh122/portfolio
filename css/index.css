@@ -425,12 +425,12 @@ p.head2{
 
 /* Slide 1 */
 .slide:nth-child(1) {
-  background-image: url("/images/techadroithackathon.jpg");
+  background-image: url("images/webcomeptition.png");
 }
 
 /* Slide 2 */
 .slide:nth-child(2) {
-  background-image: url("/images/webcomeptition.png");
+  background-image: url("images/webcomeptition.png");
 }
 
 /* Slide 3 */
