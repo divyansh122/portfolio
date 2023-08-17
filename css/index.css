@@ -490,12 +490,13 @@ p.head2{
   .btn:last-child { left: calc(50% + 1em); }
 }
 .impo7{
-  height: 50vh;
+  height: 20vh;
 }
 
 #h1footer{
   margin-top: 5px;
-  color: #DA9F93;
+  color: #891fb7;
+  text-align: center;
   font-family: 'League Gothic', sans-serif;
   font-size: 3em;
 }
@@ -506,3 +507,30 @@ p.head2{
   }
 }
 
+#h2footer{
+  font-size: 0.7em;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+#h4footer{
+  margin-top: 5px;
+  text-align: center;
+  color: #4de312;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 2em;
+}
+#h3footer{
+  font-size: 1em;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.socials{
+  text-align: center;
+}
+#socials1{
+  display: inline-block;
+  align-items: center;
+}
